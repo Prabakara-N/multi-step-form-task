@@ -11,6 +11,8 @@ const Confirmation = () => {
 
   const handleSubmit = () => {
     toast.success("Form Submitted Successfully");
+    const combinedData = { ...userInfo, preferences };
+    console.log("HotelFormOutput:", combinedData);
   };
   return (
     <>
