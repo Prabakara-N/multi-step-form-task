@@ -12,7 +12,7 @@ const Preferences = () => {
 
   useEffect(() => {
     setNoOfDays(preferences.noOfDays);
-    setSelectedPreferences({ ...preferences.selectedPreferences });
+    setSelectedPreferences({ ...preferences.preferenceInfo });
     setIsChecked(preferences.smoking); // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -58,7 +58,7 @@ const Preferences = () => {
                   />
                   <label
                     htmlFor={optionOne}
-                    className="block text-base font-medium text-gray-900 dark:text-white"
+                    className="block text-base font-medium text-black dark:text-white"
                   >
                     {optionOne}
                   </label>
@@ -86,14 +86,14 @@ const Preferences = () => {
         </div>
 
         <div className="flex items-center gap-4">
-          <p className="font-medium text-gray-700">Smoking :</p>
+          <p className="font-medium text-black">Smoking :</p>
           <ToggleBtn isChecked={isChecked} setIsChecked={setIsChecked} />
         </div>
 
         <div>
           <label
             htmlFor="noofdays"
-            className="block mb-2 text-sm font-medium text-gray-700 dark:text-white"
+            className="block mb-2 text-sm font-medium text-black dark:text-white"
           >
             No Of Days
           </label>

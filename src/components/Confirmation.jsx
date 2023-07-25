@@ -16,7 +16,7 @@ const Confirmation = () => {
   };
   return (
     <>
-      <div className="flex flex-col gap-4 mt-6 justify-center font-semibold">
+      <div className="flex flex-col gap-4 mt-8 justify-center font-semibold">
         <p>
           Name:<span className="ml-4 text-gray-600">{name}</span>{" "}
         </p>
