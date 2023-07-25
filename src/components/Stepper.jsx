@@ -16,7 +16,7 @@ const Stepper = () => {
         >
           1
         </p>
-        <p className="text-gray-600">Personal Info</p>
+        <p className="text-gray-600 text-sm md:text-base">Personal Info</p>
       </div>
       <div className="flex flex-col gap-2 items-center relative">
         <p
@@ -30,7 +30,7 @@ const Stepper = () => {
         >
           2
         </p>
-        <p className="text-gray-600">Preferences</p>
+        <p className="text-gray-600 text-sm md:text-base">Preferences</p>
       </div>
       <div className="flex flex-col gap-2 items-center relative">
         <p
@@ -42,7 +42,7 @@ const Stepper = () => {
         >
           3
         </p>
-        <p className="text-gray-600">Confirmation</p>
+        <p className="text-gray-600 text-sm md:text-base">Confirmation</p>
       </div>
     </div>
   );

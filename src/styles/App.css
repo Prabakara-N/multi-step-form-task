@@ -53,15 +53,6 @@ body {
   justify-content: center;
 }
 
-/* .line-two::before {
-  content: "";
-  position: absolute;
-  height: 2px;
-  width: 139px;
-  background-color: rgba(0, 0, 0, 0.25);
-  left: -110px;
-} */
-
 .line-one::after {
   content: "";
   position: absolute;
@@ -108,4 +99,13 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type="number"] {
   -moz-appearance: textfield;
+}
+
+@media screen and (max-width: 767px) {
+  .line-one::after,
+  .line-two::after,
+  .line-three-before::before,
+  .line-two-before::before {
+    width: 100%;
+  }
 }

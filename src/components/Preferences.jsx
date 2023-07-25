@@ -52,7 +52,10 @@ const Preferences = () => {
 
   return (
     <>
-      <form onSubmit={handleSubmit} className="flex flex-col gap-6 mt-2">
+      <form
+        onSubmit={handleSubmit}
+        className="flex flex-col gap-6 mt-2 w-full bg-slate-600"
+      >
         <div className="mt-6 flex flex-col justify-center items-center gap-6">
           {preferencesOptions.map((preference) => {
             const { id, name, optionOne, optionTwo } = preference;
