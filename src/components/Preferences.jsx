@@ -13,7 +13,7 @@ const Preferences = () => {
   useEffect(() => {
     setNoOfDays(preferences.noOfDays);
     setSelectedPreferences({ ...preferences.selectedPreferences });
-    setIsChecked(preferences.isChecked); // eslint-disable-next-line react-hooks/exhaustive-deps
+    setIsChecked(preferences.smoking); // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const dispatch = useDispatch();
