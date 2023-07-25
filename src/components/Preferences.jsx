@@ -31,6 +31,18 @@ const Preferences = () => {
     }
   };
 
+  const handlePrevious = () => {
+    if (selectedPreferences || noOfDays || isChecked) {
+      const preferenceData = {
+        noOfDays,
+        smoking: isChecked,
+        preferenceInfo: selectedPreferences,
+      };
+      dispatch(setPreferences(preferenceData));
+      dispatch(setStep(1));
+    }
+  };
+
   const handlePreferenceChange = (e) => {
     setSelectedPreferences({
       ...selectedPreferences,
@@ -111,7 +123,7 @@ const Preferences = () => {
         <div className="flex w-full justify-end gap-4 items-center">
           <button
             type="button"
-            onClick={() => dispatch(setStep(1))}
+            onClick={handlePrevious}
             className="text-white bg-gray-500 hover:bg-gray-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
           >
             Previous
